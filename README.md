@@ -19,12 +19,16 @@ The goal was to build a robust data pipeline that was not only technically sound
     * To make all our data points comparable, I used **Min-Max Normalization** to scale them into a consistent range. This ensures that a country's GDP doesn't unfairly dominate the final score.
 
         **Normalization Formula:**
-        $$ \text{Normalized Value} = \frac{\text{Value} - \text{min(Values)}}{\text{max(Values)} - \text{min(Values)}} $$
+        ```
+        Normalized Value = (Value - min(Values)) / (max(Values) - min(Values))
+        ```
 
     * The core of this project is the **AI Maturity Index**, a thoughtful blend of these normalized and qualitative scores. The weights for each indicator were carefully chosen to reflect their importance in building a truly mature AI ecosystem.
 
         **Composite Index Formula:**
-        $$ \text{AI Maturity Index} = (0.15 \times \text{Internet Usage Score}) + (0.15 \times \text{GDP Score}) + (0.25 \times \text{AI Use Cases Score}) + (0.25 \times \text{Regulation Score}) + (0.20 \times \text{Governance Score}) $$
+        ```
+        AI Maturity Index = (0.15 * Internet Usage Score) + (0.15 * GDP Score) + (0.25 * AI Use Cases Score) + (0.25 * Regulation Score) + (0.20 * Governance Score)
+        ```
 
 #### **📈 The "Aha!" Moments: Uncovering Key Findings**
 
@@ -45,9 +49,9 @@ This project is a living document of my work. Feel free to clone the repository 
 2.  Install the required libraries: `pip install -r requirements.txt`.
 3.  Run the pipeline scripts in order:
     ```bash
-    python src/collect_data.py
-    python src/process_data.py
-    python src/visualize_data.py
+    python scripts/collect_data.py
+    python scripts/process_data.py
+    python scripts/visualize_data.py
     ```
 
 #### **⏭️ Where We Go From Here: A Look Ahead**
