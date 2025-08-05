@@ -13,14 +13,18 @@ The goal was to build a robust data pipeline that was not only technically sound
 1.  **Empathizing with Data:**
     * I began by identifying key indicators that truly reflect a country's readiness. Data from the **World Bank API** on GDP per capita and internet usage was essential for understanding the foundational digital and economic landscape.
     * To capture the crucial policy and governance side, I leveraged a Python-based web scraper to gather insights from **OECD** policy dashboards.
-    
+    * **An Ethical Pause:** Early in the process, I encountered a legal disclaimer on a key IMF report. Instead of bypassing it, I chose to adapt. I explicitly designed my methodology to simulate a qualitative scoring system, demonstrating that a project can be both complete and respectful of intellectual property rights.
+
 2.  **Crafting the Index:**
     * To make all our data points comparable, I used **Min-Max Normalization** to scale them into a consistent range. This ensures that a country's GDP doesn't unfairly dominate the final score.
-        * **Normalization Formula:**
-            $$ \text{Normalized Value} = \frac{\text{Value} - \text{min(Values)}}{\text{max(Values)} - \text{min(Values)}} $$
+
+        **Normalization Formula:**
+        $$ \text{Normalized Value} = \frac{\text{Value} - \text{min(Values)}}{\text{max(Values)} - \text{min(Values)}} $$
+
     * The core of this project is the **AI Maturity Index**, a thoughtful blend of these normalized and qualitative scores. The weights for each indicator were carefully chosen to reflect their importance in building a truly mature AI ecosystem.
-        * **Composite Index Formula:**
-            $$ \text{AI Maturity Index} = (0.15 \times \text{Internet Usage Score}) + (0.15 \times \text{GDP Score}) + (0.25 \times \text{AI Use Cases Score}) + (0.25 \times \text{Regulation Score}) + (0.20 \times \text{Governance Score}) $$
+
+        **Composite Index Formula:**
+        $$ \text{AI Maturity Index} = (0.15 \times \text{Internet Usage Score}) + (0.15 \times \text{GDP Score}) + (0.25 \times \text{AI Use Cases Score}) + (0.25 \times \text{Regulation Score}) + (0.20 \times \text{Governance Score}) $$
 
 #### **📈 The "Aha!" Moments: Uncovering Key Findings**
 
@@ -30,7 +34,8 @@ The visualizations are where the data comes to life. They tell a powerful story 
 * **India's Unique Position:** The heatmap revealed a fascinating insight: India is a powerhouse of AI use cases and innovation, but its overall readiness is an ongoing story. This highlights a powerful opportunity for growth—a chance to translate that vibrant innovation into a fully mature AI ecosystem.
 * **The Power of Policy:** The data consistently showed that countries with well-defined regulatory and governance frameworks scored higher. This was a clear reminder that technology and policy are two sides of the same coin; one cannot succeed without the other.
 
-*(Embed your `ai_maturity_bar_chart.png` and `ai_maturity_heatmap.png` images here using the `![Alt Text](path/to/image.png)` format.)*
+![AI Maturity Index Bar Chart](visuals/ai_maturity_bar_chart.png)
+![AI Maturity Index Heatmap](visuals/ai_maturity_heatmap.png)
 
 #### **🚀 How to Engage with This Project**
 
@@ -54,4 +59,4 @@ This dashboard is a solid beginning, but the journey of discovery doesn't stop h
 
 ---
 
-*(This project is for demonstrative and academic use, showcasing data engineering and ethical practices. The data and insights are for illustrative purposes and not to be used for real-world decisions. All work is performed with respect for intellectual property and in the spirit of data protection laws.)*
+*(This is a portfolio project created to demonstrate my skills in data engineering, analysis, and ethical project management. The mock scores are for demonstration. All work adheres to professional standards and a respect for intellectual property.)*
