@@ -1,0 +1,15 @@
+# requirements.txt
+requests
+beautifulsoup4
+pdfminer.six
+pandas
+numpy
+openpyxl
+matplotlib
+seaborn
+plotly
+reportlab
+python-docx
+jinja2
+streamlit
+jupyterlab  # for development and exploration

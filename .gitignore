@@ -1,0 +1,4 @@
+# Exclude Python environment directories
+venv/
+env/
+__pycache__/
