@@ -51,7 +51,7 @@ This project is a living document of my work. Feel free to clone the repository 
     ```bash
     python scripts/collect_data.py
     python scripts/process_data.py
-    python scripts/visualize_data.py
+    python scripts/visualize_top10.py
     ```
 
 #### **⏭️ Where We Go From Here: A Look Ahead**
